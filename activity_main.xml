@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/company_name"
+        android:fontFamily="cursive"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:background="#212121"/>
+
+    <ImageView
+        android:id="@+id/peaches"
+        android:src="@drawable/peaches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_above="@id/phoneLogo"/>
+
+
+
+    <ImageView
+        android:id="@+id/phoneLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="340dp"
+        android:src="@drawable/phone"
+        android:background="#43A047"
+        android:layout_above="@id/emailLogo"/>
+
+    <ImageView
+        android:id="@+id/emailLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="340dp"
+        android:src="@drawable/email"
+        android:background="#388E3C"
+        android:layout_above="@id/websiteLogo"/>
+
+    <ImageView
+        android:id="@+id/websiteLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="340dp"
+        android:src="@drawable/website"
+        android:background="#2E7D32"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        android:textSize="21sp"
+        android:paddingBottom="16dp"
+        android:paddingEnd="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="21sp"
+        android:paddingBottom="12dp"
+        android:paddingEnd="40dp"
+        android:layout_above="@id/websiteLogo"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textSize="21sp"
+        android:paddingBottom="12dp"
+        android:paddingEnd="60dp"
+        android:layout_above="@id/emailLogo"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"/>
+
+
+
+
+</RelativeLayout>
